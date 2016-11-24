@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Display Local Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container" align="center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 weatherBox">
+        <div class="row">
+          <div class='col-xs-12'>
+            <p class='city' id='city'></p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-xs-6'>
+            <canvas id="weatherIcon" height="70" width="70"></canvas>
+          <p class='description' id="currentDescription"></p>
+        </div>
+          <div class='switchContainer col-xs-6' onclick='onSwitchClick(this)'>
+            <div class='switch'></div>
+            <div class='label degF'>&degF</div>
+            <div class='label degC'>&degC</div>
+          </div>
+        </div>
+      <div class='row'>
+        <div class='col-xs-12'>
+          <p class='temp' id="currentTempUI"></p>
+        </div>
+      </div>
+      <hr class='line'>
+      <div class='row days'>
+        <div class='col-xs-4 box'>
+          <p class='day1' id="day1"></p>
+          <div>
+            <canvas id="icon1" height="40" width="40"></canvas>
+          </div>
+          <p class='degHighLow' id='dailyTemps1'></p>
+        </div>
+        <div class='col-xs-4 box'>
+          <p class='day2' id="day2"></p>
+          <div>
+            <canvas id="icon2" height="40" width="40"></canvas>
+          </div>
+          <p class='degHighLow' id='dailyTemps2'>77/43&deg</p>
+        </div>
+        <div class='col-xs-4 box'>
+          <p class='day3' id="day3"></p>
+          <div>
+            <canvas id="icon3" height="40" width="40"></canvas>
+          </div>
+          <p class='degHighLow' id='dailyTemps3'>77/54&deg</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
